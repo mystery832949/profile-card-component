@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box; 
+    margin: 0 ; 
+    padding: 0 ; 
+    font-family: "Kumbh Sans", sans-serif;
+}
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body{
+   background-color: var(--Dark-cyan);
+   display: flex;
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   min-height: 100vh ;
+   font-size: 18px; 
+   background-image: url("./images/bg-pattern-top.svg"),url("./images/bg-pattern-bottom.svg") ;
+   background-repeat: no-repeat, no-repeat; 
+
+} 
+
+
+.monkeytext{
+    
+    font-weight: 700; 
+    
+}
+.divider{
+    height: 1px; 
+     
+    width: 100%;
+    position: relative; 
+    bottom: 120px;
+    background-color: #E8E9EC;
+     
+
+}
+.gray-text{
+     color:   hsl(227,  10%, 46%);
+     font-weight: 400;
+     font-size: 14px;
+     
+}
+.ray{
+    font-size: 19px; 
+    margin-left:3px;
+}
+.one-container{ 
+    
+    
+
+    border-radius:   14px;
+    width:   350px; 
+    height:  428px;
+    text-align: center; 
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.19) 0px 30px 90px;
+}
+.idk{
+    position: relative;
+    bottom:173px;
+}
+
+.monkey{
+    position: relative; 
+    top: 10px;
+    font-size: 17px;
+}
+h3{
+    color:hsl(229, 23%, 23%) ;
+}
+
+.cat{
+  background-image: url("./images/bg-pattern-card.svg");
+    background-position: center; 
+    background-size: cover; 
+      background-repeat:no-repeat; 
+      border-radius:  14px 14px 0px 0px;
+    height:  160px; 
+
+}
+.text{
+    font-size: 15px;
+    margin-top: 4px;
+    
+}
+
+.three-container{
+
+    display: flex; 
+    flex-direction: row; 
+   jusify-content: space-between ; 
+   justify-content: center; 
+   position: relative; 
+   bottom: 130px;
+   margin-top: 30px;
+   gap: 40px;  
+   
+} 
+
+.idk img{
+    margin-top: 118px;
+    border-radius:  50%;
+    margin-bottom: 10px;
+    border: 5px solid  white ; 
+}
+
+
+@media screen and (min-width: 344px ) and (max-width: 344px){
+     .one-container{
+           width: 330px;
+     }
+}
+
+@media screen and (min-width: 540px){
+    .one-container{
+
+        width: 360px;
+        height: 420px;
+   
+    }
+    body{
+        background-position: -2vw -40vh , 50vw  50vh ; 
+    }
+}
